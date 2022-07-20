@@ -18,3 +18,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.gridfour{
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+}
