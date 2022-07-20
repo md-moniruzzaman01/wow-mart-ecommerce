@@ -1,7 +1,20 @@
 import React from 'react';
+import {BsStarHalf, BsStarFill } from 'react-icons/bs';
 import Link from 'next/link';
 const Card = ({cardProduct}) => {
     const { picture, title,_id,sells,price} = cardProduct;
+    const starCount = star || 3.6
+    const startsNumer = Math.floor(starCount)
+    const halfstart = Math.ceil(starCount - startsNumer)
+    let starts = []
+    for (var index = 0; index < startsNumer; index++) {
+        starts.push(<BsStarFill />)
+    }
+    let half = []
+    for (var index = 0; index < halfstart; index++) {
+        starts.push(<BsStarHalf />)
+    }
+
     return (
         <div className="bg-base-100 p-2 rounded">
         <div className='w-full flex justify-center items-center mx-auto'> <img src={picture} alt="" className='h-11s w-full rounded' /> </div>
@@ -16,7 +29,7 @@ const Card = ({cardProduct}) => {
         </div>
        <div className='flex justify-between items-center mt-3 '>
        <p className='text-xl'>${price}</p>
-       <button className='bg-yellow-600 px-5 py-1.5 text-gray-800 font-semibold'>Add to Card</button>
+       <button className='bg-yellow-6s00 px-5 py-1.5 text-gray-800 font-semibold'>Add to Card</button>
        </div>
 
 
