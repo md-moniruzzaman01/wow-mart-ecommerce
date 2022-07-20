@@ -2,7 +2,7 @@ import React from 'react';
 import {BsStarHalf, BsStarFill } from 'react-icons/bs';
 import Link from 'next/link';
 const Card = ({cardProduct}) => {
-    const { picture, title,_id,sells,price} = cardProduct;
+    const { picture, title,_id,sells,price,star} = cardProduct;
     const starCount = star || 3.6
     const startsNumer = Math.floor(starCount)
     const halfstart = Math.ceil(starCount - startsNumer)
