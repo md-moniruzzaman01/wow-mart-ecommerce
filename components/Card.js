@@ -11,7 +11,7 @@ const Card = ({cardProduct}) => {
         starts.push(<BsStarFill />)
     }
     let half = []
-    for (var index = 0; index < halfstart; index++) {
+    for (var i= 0; index < halfstart; i++) {
         starts.push(<BsStarHalf />)
     }
 

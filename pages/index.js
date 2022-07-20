@@ -17,7 +17,7 @@ export default function Home({data}) {
   )
 }
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps() {
   const res = await fetch(`https://obscure-stream-41015.herokuapp.com/products`)
   const data = await res.json()
   return {
