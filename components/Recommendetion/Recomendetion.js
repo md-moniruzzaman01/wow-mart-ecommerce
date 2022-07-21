@@ -9,7 +9,7 @@ const Recomendetion = ({recommend}) => {
        
 
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 my-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 my-5">
         {
                 recommend.map(fd=> <Card key={fd._id} cardProduct={fd}></Card>)
             }

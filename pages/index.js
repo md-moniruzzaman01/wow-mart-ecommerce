@@ -22,7 +22,7 @@ export default function Home({ data }) {
         {/* flash deal */}
         <div className="min-h-[60vh] bg-gray-50 my-11">
           <SectionHead>Flash Deals</SectionHead>
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5 mx-2">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5 mx-2">
             {flashDeals.map(pd => <Card cardProduct={pd} key={pd._id}></Card>)}
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function Home({ data }) {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
               {NewArrivels.map(pd => <Card cardProduct={pd} key={pd._id}></Card>)}
             </div>
           </div>
