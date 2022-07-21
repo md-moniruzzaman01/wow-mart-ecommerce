@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
-import { MdSearch } from 'react-icons/md';
+
 import { IoDiamondOutline } from "react-icons/io5";
 const Navtop = () => {
     return (
@@ -31,7 +31,7 @@ const Navtop = () => {
 
 <div className='flex justify-center h-16 mx-auto md:hidden py-2 bg-secondary '>
 <input className='bg-gray-100 px-7 rounded-l-md w-8/12' type="search" name="search" id="" placeholder='Search here....' />
-<button className='flex  justify-center items-center px-0.5 bg-slate-200 rounded-r-md pr-2'><MdSearch />Search</button>
+<button className='flex  justify-center items-center px-0.5 bg-slate-200 rounded-r-md pr-2'>Search</button>
 </div>
 </>
     );
