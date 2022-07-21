@@ -5,6 +5,7 @@ import Head from 'next/head'
 import Footer from './Footer/Footer';
 import Navbottom from './Navbar/Navbottom'
 import Navtop from './Navbar/Navtop';
+import Navlogo from './Navbar/Navlogo';
 const Layout = ({title, children }) => {
     return (
         <>
@@ -18,6 +19,7 @@ const Layout = ({title, children }) => {
                 <header>
                     <nav>
                         <Navtop></Navtop>
+                        <Navlogo/>
                        <Navbottom></Navbottom>
                     </nav>
                 </header>
