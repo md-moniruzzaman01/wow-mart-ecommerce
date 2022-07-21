@@ -5,11 +5,11 @@ import logo from '../../public/logo.png';
 import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
 const Navlogo = () => {
     return (
-        <div className='flex justify-between items-center'>
+        <div className='flex justify-between items-center bg-secondary'>
            <div>
            
            <Link href="/">
-                <a className="flex-1 px-2 mx-2 text-4xl flex items-center text-success">
+                <a className="flex-1 px-2 mx-2 text-4xl flex items-center text-base-100">
                   
                      <Image src={logo} width={70} height={50} alt="" />
                     
@@ -29,7 +29,7 @@ const Navlogo = () => {
             </div>
 
 
-            <div className="flex-none  w-3/12 hidden lg:flex justify-end text-success">
+            <div className="flex-none  w-3/12 hidden lg:flex justify-end text-base-100">
                 <ul className="menu menu-horizontal mr-5">
 
                     <li><a className='text-4xl'><AiOutlineUser/></a></li>
