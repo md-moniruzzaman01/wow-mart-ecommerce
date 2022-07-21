@@ -15,7 +15,7 @@ const Layout = ({title, children }) => {
                 <meta name="description" content="E-commerce website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className=' min-h-screen  container mx-auto'>
+            <div className=' min-h-screen  '>
                 <header>
                     <nav>
                         <Navtop></Navtop>
@@ -23,7 +23,7 @@ const Layout = ({title, children }) => {
                        <Navbottom></Navbottom>
                     </nav>
                 </header>
-                <main>{children} </main>
+                <main className='container mx-auto'>{children} </main>
                 <footer>
                     <Footer></Footer>
                 </footer>

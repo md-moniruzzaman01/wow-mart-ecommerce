@@ -30,9 +30,19 @@ a {
   margin: 5px 5px;
   display: flex;
 }
-@media (max-width: 1024px) {
+.detailpage{
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+@media (max-width: 600px) {
   .gridfour{
     
+    grid-template-columns: 1fr;
+  }
+  .detailpage{
+
+    display: grid;
     grid-template-columns: 1fr;
   }
 }

@@ -26,6 +26,15 @@ const Navlogo = () => {
                 <input className='bg-base-100 px-7 rounded-l-3xl w-11/12 h-11 text-gray-800' type="search" name="search" id="" placeholder='Search here....' />
                 <button className='flex  justify-center items-center px-5 bg-info rounded-r-3xl h-11'>Search</button>
             </div>
+
+
+            <div className="flex-none  w-3/12 hidden lg:flex justify-end text-success">
+                <ul className="menu menu-horizontal">
+
+                    <li><a>Navbar Item </a></li>
+                    <li><a>Navbar Item 1</a></li>
+                </ul>
+            </div>
         </div>
     );
 };
