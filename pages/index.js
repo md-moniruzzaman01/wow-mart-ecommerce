@@ -1,6 +1,8 @@
+import Ads1 from "../components/Ads/Ads1";
 import Card from "../components/Card";
 import Carosol from "../components/Carosol/Carosol";
 import Layout from "../components/Layout";
+import Recomendetion from "../components/Recommendetion/Recomendetion";
 import HorizontalCard from "../components/sharecomponents/HorizontalCard";
 import SectionHead from "../components/sharecomponents/SectionHead";
 import TreindingNavbar from "../components/Treinding/TreindingNavbar";
@@ -10,11 +12,13 @@ export default function Home({ data }) {
   const flashDeals = data?.slice(0, 5);
   const NewArrivels = data.slice(3, 7);
   const Bestseller= data.slice(8, 11);
+  const recommend= data.slice(4, 14)
   return (
     <Layout title={"Home page"}>
       <>
       <Carosol></Carosol>
       <TreindingNavbar></TreindingNavbar>
+      <Ads1></Ads1>
         {/* flash deal */}
         <div className="min-h-[60vh] bg-gray-50 my-11">
           <SectionHead>Flash Deals</SectionHead>
@@ -46,6 +50,11 @@ export default function Home({ data }) {
           {Bestseller.map(pd => <HorizontalCard bestsell={pd} key={pd._id}></HorizontalCard>)}
           </div>
          </div>
+        </div>
+
+        <div className="bg-gray-50 min-h-[60vh] px-2">
+          <SectionHead>Recommended for you</SectionHead>
+          <Recomendetion recommend={recommend}></Recomendetion>
         </div>
       </>
     </Layout>
