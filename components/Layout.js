@@ -1,8 +1,10 @@
 
 import React from 'react';
 import Head from 'next/head'
-import Link from 'next/link';
+
 import Footer from './Footer/Footer';
+import Navbottom from './Navbar/Navbottom'
+import Navtop from './Navbar/Navtop';
 const Layout = ({title, children }) => {
     return (
         <>
@@ -15,7 +17,8 @@ const Layout = ({title, children }) => {
             <div className=' min-h-screen  container mx-auto'>
                 <header>
                     <nav>
-                        <Link href="/"><a >wow-mart</a></Link>
+                        <Navtop></Navtop>
+                       <Navbottom></Navbottom>
                     </nav>
                 </header>
                 <main>{children} </main>
