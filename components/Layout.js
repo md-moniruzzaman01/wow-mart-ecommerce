@@ -11,7 +11,7 @@ const Layout = ({title, children }) => {
                 <meta name="description" content="E-commerce website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className='flex min-h-screen flex-col justify-between'>
+            <div className=' min-h-screen  container mx-auto'>
                 <header>
                     <nav>
                         <Link href="/"><a >wow-mart</a></Link>

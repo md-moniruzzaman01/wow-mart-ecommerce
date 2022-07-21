@@ -23,3 +23,10 @@ a {
   display: grid;
   grid-template-columns: 4fr 2fr;
 }
+
+.treindingbtn{
+  background-color: rgb(207, 206, 206);
+  padding: 10px 15px;
+  margin: 5px 5px;
+  display: flex;
+}

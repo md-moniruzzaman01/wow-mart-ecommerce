@@ -18,7 +18,7 @@ const Card = ({cardProduct}) => {
     return (
         <div className="bg-gray-100 p-2 rounded">
         <div className='w-full flex justify-center items-center mx-auto'> <img src={picture} alt="" className='h-11s w-full rounded' /> </div>
-        <Link href={`product/${_id}`}><a ><p className='font-semibold  hover:text-blue-800 hover:underline'>{title}</p></a></Link>
+        <Link href={`product/${_id}`}><a ><p className='font-semibold h-20 hover:text-blue-800 hover:underline'>{title}</p></a></Link>
         <div className='flex justify-between items-center'>
             <p className="flex text-amber-500">
                 <span className="flex">{starts.map((start, index) => <span key={index}>{start}</span>)}</span>

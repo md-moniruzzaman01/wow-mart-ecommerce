@@ -1,7 +1,9 @@
 import Card from "../components/Card";
+import Carosol from "../components/Carosol/Carosol";
 import Layout from "../components/Layout";
 import HorizontalCard from "../components/sharecomponents/HorizontalCard";
 import SectionHead from "../components/sharecomponents/SectionHead";
+import TreindingNavbar from "../components/Treinding/TreindingNavbar";
 
 export default function Home({ data }) {
 
@@ -11,15 +13,17 @@ export default function Home({ data }) {
   return (
     <Layout title={"Home page"}>
       <>
+      <Carosol></Carosol>
+      <TreindingNavbar></TreindingNavbar>
         {/* flash deal */}
-        <div className="min-h-[60vh] bg-gray-50">
+        <div className="min-h-[60vh] bg-gray-50 my-11">
           <SectionHead>Flash Deals</SectionHead>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-5 mx-2">
             {flashDeals.map(pd => <Card cardProduct={pd} key={pd._id}></Card>)}
           </div>
         </div>
         {/* new arraivel */}
-        <div className="gridfour">
+        <div className="gridfour my-11">
           <div className=" bg-gray-50">
             <SectionHead>New Arrivals</SectionHead>
             <div className="mt-5 flex justify-center relative">
@@ -36,9 +40,12 @@ export default function Home({ data }) {
             </div>
           </div>
           {/* best seller */}
+         <div className="bg-gray-50">
+         <SectionHead>Best Seller</SectionHead>
           <div className="mt-2 mx-4">
           {Bestseller.map(pd => <HorizontalCard bestsell={pd} key={pd._id}></HorizontalCard>)}
           </div>
+         </div>
         </div>
       </>
     </Layout>
