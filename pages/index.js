@@ -61,10 +61,11 @@ export default function Home({ data }) {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(`https://obscure-stream-41015.herokuapp.com/products`)
   const data = await res.json()
   return {
     props: { data },
+    
   }
 }

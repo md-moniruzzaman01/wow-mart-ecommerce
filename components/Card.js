@@ -1,6 +1,7 @@
 import React from 'react';
 import {BsStarHalf, BsStarFill } from 'react-icons/bs';
 import Link from 'next/link';
+import Image from 'next/image';
 const Card = ({cardProduct}) => {
     const { picture, title,_id,sells,price,star} = cardProduct;
     const starCount = star || 3.6
@@ -17,7 +18,9 @@ const Card = ({cardProduct}) => {
 
     return (
         <div className="bg-gray-100 p-2 rounded max-w-[18rem] mx-auto my-2">
-        <div className='w-full flex justify-center items-center mx-auto'> <img src={picture} alt="" className='h-56 w-full rounded' /> </div>
+        <div className='w-full flex justify-center items-center mx-auto'> 
+        <Image src={picture} alt="" width={300} height={300} className=' rounded' /> 
+        </div>
         <Link href={`product/${_id}`}><a ><p className='font-semibold h-16 hover:text-blue-800 hover:underline'>{title}</p></a></Link>
         <div className='flex justify-between items-center'>
             <p className="flex text-amber-500">
