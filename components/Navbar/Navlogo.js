@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import logo from '../../public/logo.png';
+import { AiOutlineUser, AiOutlineShoppingCart } from "react-icons/ai";
 const Navlogo = () => {
     return (
         <div className='flex justify-between items-center'>
@@ -9,10 +10,10 @@ const Navlogo = () => {
            
            <Link href="/">
                 <a className="flex-1 px-2 mx-2 text-4xl flex items-center text-success">
-                    <div>
+                  
                      <Image src={logo} width={70} height={50} alt="" />
-                    </div>
-                    <p>wow-mart</p>
+                    
+                    <p className=''>wow-mart</p>
                 </a>
             </Link>
            </div>
@@ -23,16 +24,16 @@ const Navlogo = () => {
                 </label>
             </div>
             <div className='w-6/12 hidden lg:flex mx-auto my-4'>
-                <input className='bg-base-100 px-7 rounded-l-3xl w-11/12 h-11 text-gray-800' type="search" name="search" id="" placeholder='Search here....' />
-                <button className='flex  justify-center items-center px-5 bg-info rounded-r-3xl h-11'>Search</button>
+                <input className='bg-gray-200 px-7 rounded-l-3xl w-11/12 h-11 text-gray-800' type="search" name="search" id="" placeholder='Search here....' />
+                <button className='flex  justify-center font-semibold items-center px-5 bg-gray-300 rounded-r-3xl h-11'>Search</button>
             </div>
 
 
             <div className="flex-none  w-3/12 hidden lg:flex justify-end text-success">
-                <ul className="menu menu-horizontal">
+                <ul className="menu menu-horizontal mr-5">
 
-                    <li><a>Navbar Item </a></li>
-                    <li><a>Navbar Item 1</a></li>
+                    <li><a className='text-4xl'><AiOutlineUser/></a></li>
+                    <li><a className='text-4xl relative'><AiOutlineShoppingCart/>  <div className="badge bg-red-500 text-white absolute top-2 left-11">0</div></a></li>
                 </ul>
             </div>
         </div>

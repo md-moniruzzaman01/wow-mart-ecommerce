@@ -32,7 +32,7 @@ const Productdetail = ({ data }) => {
                 <div>
                     list
                 </div>
-                <div className='bg-[#353c4a] static md:flex justify-between mt-5'>
+                <div className=' static md:flex justify-between mt-5'>
                     <div className='w-full md:w-6/12 m-4'>
                         <img className='w-10/12 mx-auto' src={picture} alt="" />
                     </div>
@@ -52,7 +52,7 @@ const Productdetail = ({ data }) => {
                             </div>
 
                             <div>
-                                <button className='bg-primary px-5 md:px-11 py-1 md:py-2 text-gray-800 font-semibold text-base md:text-xl ml-5 md:ml-11'>Add to Card</button>
+                                <button className='bg-amber-400 px-5 md:px-11 py-1 md:py-2 text-gray-800 font-semibold text-base md:text-xl ml-5 md:ml-11'>Add to Card</button>
                             </div>
                         </div>
 

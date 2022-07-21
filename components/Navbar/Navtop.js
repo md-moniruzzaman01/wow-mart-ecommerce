@@ -3,9 +3,9 @@ import { BsTelephone } from "react-icons/bs";
 const Navtop = () => {
     const liLinks =
     <>
-        <li className="hover:text-primary"><a>My Account</a></li>
-        <li className="hover:text-primary"><a>My Wishlist</a></li>
-        <li className="hover:text-primary"><a>Checkout</a></li>
+        <li className="hover:text-yellow-600"><a>My Account</a></li>
+        <li className="hover:text-yellow-600"><a>My Wishlist</a></li>
+        <li className="hover:text-yellow-600"><a>Checkout</a></li>
         {/* <div className="flex items-center">
 
             <input type="checkbox" data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" className="toggle toggle-md" checked />
@@ -14,10 +14,10 @@ const Navtop = () => {
 
     </>
     return (
-        <div className="bg-[#202020] ">
+        <div className="bg-gray-200">
         {/* top nav bar section  */}
-        <div className="container flex justify-between text-info mx-auto border-b border-slate-600">
-            <div className="flex items-center py-2  hover:text-primary">
+        <div className="container flex justify-between  mx-auto border-b border-slate-300">
+            <div className="flex items-center py-2  hover:text-yellow-600">
                 <p><BsTelephone /></p>
                 <p className="pl-1">Call: +8801881965826</p>
             </div>
@@ -29,11 +29,11 @@ const Navtop = () => {
 
                 <div className="dropdown dropdown-end block md:hidden">
                     <label tabIndex="0" className="btn btn-ghost">
-                        <p className="flex items-center hover:text-primary">
+                        <p className="flex items-center hover:text-yellow-600">
                             Links<svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
                         </p>
                     </label>
-                    <ul tabIndex="0" className="menu menu-compact dropdown-content mt-1 p-2 shadow bg-base-100 rounded-box w-32 text-neutral">
+                    <ul tabIndex="0" className="menu menu-compact dropdown-content mt-1 p-2 shadow bg-white rounded-box w-32 text-neutral">
                         {liLinks}
 
                     </ul>
