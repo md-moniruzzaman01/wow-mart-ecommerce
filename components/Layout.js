@@ -2,6 +2,7 @@
 import React from 'react';
 import Head from 'next/head'
 import Link from 'next/link';
+import Footer from './Footer/Footer';
 const Layout = ({title, children }) => {
     return (
         <>
@@ -19,7 +20,7 @@ const Layout = ({title, children }) => {
                 </header>
                 <main>{children} </main>
                 <footer>
-                    footer
+                    <Footer></Footer>
                 </footer>
             </div>
         </>
